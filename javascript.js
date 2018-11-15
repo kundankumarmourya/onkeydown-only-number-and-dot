@@ -15,3 +15,18 @@ function validateQty(el, evt) {
         return false;
     }
 };
+
+
+//Use Jquery instead. Add a decimal class to your textbox 
+//Use this code in your JS. It checks for multiple decimals and also restrict users to type only numbers.
+
+$('.decimal').keyup(function(){
+    var val = $(this).val();
+    if(isNaN(val)){
+         val = val.replace(/[^0-9\.]/g,'');
+         if(val.split('.').length>2) 
+             val =val.replace(/\.+$/,"");
+    }
+    $(this).val(val); 
+});
+
