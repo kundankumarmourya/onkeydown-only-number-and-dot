@@ -1,4 +1,4 @@
-# onkeydown-only-number-and-dot
+# Onkeydown Only Number and Dot
 This function will prevent entry of anything other than numbers and a single dot.
 
 ===========================================================
